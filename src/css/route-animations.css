@@ -1,0 +1,29 @@
+.route-left-leave-to,
+.route-left-enter-from {
+  transform: translateX(120px);
+  opacity: 0;
+}
+.route-left-enter-to,
+.route-right-enter-to {
+  transform: translateX(0px);
+  opacity: 1;
+}
+.route-left-enter-active,
+.route-right-enter-active {
+  transition: all 0.15s ease-out;
+}
+.route-left-leave-active,
+.route-right-leave-active {
+  transition: all 0.15s;
+}
+.route-left-leave-from,
+.route-right-leave-from {
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+.route-right-leave-to,
+.route-right-enter-from {
+  transform: translateX(-120px);
+  opacity: 0;
+}

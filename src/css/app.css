@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Eczar", serif;
+}
+body {
+  line-height: 1;
+  color: var(--font-color-one);
+  height: 100vh;
+  font-size: 1.8rem;
+  /* background: linear-gradient(to right, #1e3c72, #2a5298); */
+  /* background: linear-gradient(to right, #0f2027, #203a43, #2c5364); */
+  /* background: linear-gradient(to right, #373b44, #4286f4); */
+  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  /* background-repeat: no-repeat; */
+  overflow: hidden;
+}
+#app {
+  height: 100%;
+}
+
+:root {
+  --font-color-one: #9895b1;
+  --font-color-error: #a61e4d;
+  --background-color: #0f0c29;
+  --border-radius--card: 15px;
+  --border-radius--item: 30px 15px;
+  --shadow: rgba(0, 0, 0, 0.5) 0px 7px 20px 0px;
+  --shadow-soft: rgba(0, 0, 0, 0.15) 0px 0px 10px 2px;
+}
+
+/***************************************/
+/*General*/
+/***************************************/
+
+main {
+  height: 85%;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-color);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
+}
+
+.free-text {
+  font-size: 3.6rem;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+}
+.free-text--medium {
+  font-size: 3.2rem;
+}
+.free-text--small {
+  font-size: 2.4rem;
+}
+.free-text--bold {
+  font-weight: 500;
+}
+.free-text--centered {
+  text-align: center;
+}
+.free-text--error {
+  color: var(--font-color-error);
+}
+
+.ionicon-tooltip-remove {
+  pointer-events: none;
+}
