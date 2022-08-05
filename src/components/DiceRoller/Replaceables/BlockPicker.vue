@@ -1,6 +1,7 @@
 <template>
   <base-button type="icon" @click="toggleMenu">
     <ion-icon
+      :class="`arrow-color--ionicon-is-weird arrow-size--ionicon-is-weird`"
       class="ionicon-tooltip-remove free-text"
       name="swap-horizontal-outline"
     ></ion-icon>

@@ -3,6 +3,7 @@
     <base-button :disabled="!buttonsActive" type="icon" @click="onPrev">
       <ion-icon
         v-if="pagingBtnPrev"
+        :class="`arrow-color--ionicon-is-weird arrow-size--ionicon-is-weird`"
         class="arrow-icon prev ionicon-tooltip-remove"
         name="caret-back-circle-outline"
       ></ion-icon>
@@ -12,6 +13,7 @@
     <base-button :disabled="!buttonsActive" type="icon" @click="onNext">
       <ion-icon
         v-if="pagingBtnNext"
+        :class="`arrow-color--ionicon-is-weird arrow-size--ionicon-is-weird`"
         class="arrow-icon next ionicon-tooltip-remove"
         name="caret-forward-circle-outline"
       ></ion-icon>

@@ -15,6 +15,7 @@
         </button>
         <button @click="rollSavedItem">
           <ion-icon
+            :class="`arrow-color--ionicon-is-weird arrow-size--ionicon-is-weird`"
             class="saved-data-icon saved-data-icon--dice"
             name="dice-outline"
           ></ion-icon>
