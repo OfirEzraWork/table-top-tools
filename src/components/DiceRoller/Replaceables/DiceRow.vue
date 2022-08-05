@@ -15,16 +15,12 @@
         ></ion-icon>
       </base-button>
     </div>
-    <img
-      @click="$emit('single-roll', die)"
-      class="dice-icon"
-      :src="props.path"
-    />
+    <img @click="$emit('single-roll', die)" class="dice-icon" :src="imgPath" />
   </li>
 </template>
 
 <script>
-import { ref, watch } from "vue";
+import { computed } from "vue";
 export default {
   emits: ["amount-changed", "single-roll"],
   props: {
@@ -42,6 +38,31 @@ export default {
     },
   },
   setup(props, ctx) {
+    const imgPath = computed(() => {
+      switch (props.die) {
+        case 4:
+          return new URL("../../../assets/dice-images/d4.svg", import.meta.url);
+        case 6:
+          return new URL("../../../assets/dice-images/d6.svg", import.meta.url);
+        case 8:
+          return new URL("../../../assets/dice-images/d8.svg", import.meta.url);
+        case 10:
+          return new URL(
+            "../../../assets/dice-images/d10.svg",
+            import.meta.url
+          );
+        case 12:
+          return new URL(
+            "../../../assets/dice-images/d12.svg",
+            import.meta.url
+          );
+        case 20:
+          return new URL(
+            "../../../assets/dice-images/d20.svg",
+            import.meta.url
+          );
+      }
+    });
     function changeAmount(change) {
       if (
         (props.amount <= 0 && change < 0) ||
@@ -53,6 +74,7 @@ export default {
 
     return {
       props,
+      imgPath,
 
       changeAmount,
     };
