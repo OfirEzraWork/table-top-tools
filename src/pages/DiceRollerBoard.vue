@@ -41,11 +41,11 @@
 
 <script>
 import { computed, ref } from "vue";
-import AddDice from "../components/DiceRoller/replaceables/AddDice.vue";
+import AddDice from "../components/DiceRoller/Replaceables/AddDice.vue";
 import DiceSummary from "../components/DiceRoller/DiceSummary.vue";
 import RollResults from "../components/DiceRoller/RollResults.vue";
-import SavedData from "../components/DiceRoller/replaceables/SavedData.vue";
-import RollsHistory from "../components/DiceRoller/replaceables/RollsHistory.vue";
+import SavedData from "../components/DiceRoller/Replaceables/SavedData.vue";
+import RollsHistory from "../components/DiceRoller/Replaceables/RollsHistory.vue";
 export default {
   components: {
     AddDice,
