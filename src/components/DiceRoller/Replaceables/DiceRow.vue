@@ -3,16 +3,15 @@
     <div class="dice-row-controller">
       <base-button type="icon" @click="changeAmount(-1)">
         <ion-icon
-          class="ionicon-tooltip-remove"
           name="caret-down-circle-outline"
+          class="ionicon-tooltip-remove"
         ></ion-icon>
       </base-button>
       <p class="centered-text">{{ props.amount }}</p>
       <base-button type="icon" @click="changeAmount(1)">
         <ion-icon
-          :class="`arrow-color--test arrow-size--test`"
-          class="ionicon-tooltip-remove"
           name="caret-up-circle-outline"
+          class="ionicon-tooltip-remove"
         ></ion-icon>
       </base-button>
     </div>
