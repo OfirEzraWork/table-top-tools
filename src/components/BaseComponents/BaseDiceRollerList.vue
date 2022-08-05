@@ -34,7 +34,6 @@
 <script>
 import { computed, ref } from "vue";
 import Pagination from "../UI/Pagination.vue";
-import SavedDataItem from "../DiceRoller/replaceables/SavedDataItem.vue";
 
 export default {
   emits: ["rollSavedItem", "deleteSavedItem", "prev", "next"],
@@ -46,7 +45,6 @@ export default {
   },
   components: {
     Pagination,
-    SavedDataItem,
   },
   setup(props, { emit }) {
     const animationDirection = ref("next");
