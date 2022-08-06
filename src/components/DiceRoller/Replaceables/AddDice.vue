@@ -33,19 +33,19 @@ export default {
     BlockPicker,
   },
   props: ["dice"],
-  emits: ["amount-changed", "single-roll"],
-  setup(props, ctx) {
+  emits: ["amount-changed", "single-roll", "replace"],
+  setup(props, { emit }) {
     const menuOptions = ["saved", "history"];
     function amountChanged(change, die) {
-      ctx.emit("amount-changed", change, die);
+      emit("amount-changed", change, die);
     }
 
     function singleRoll(die) {
-      ctx.emit("single-roll", die);
+      emit("single-roll", die);
     }
 
     function emitReplace(to) {
-      emit("replace", "history", to);
+      emit("replace", "dice", to);
     }
 
     return {
