@@ -21,6 +21,7 @@ body {
 }
 #app {
   height: 100%;
+  overflow-y: scroll;
 }
 
 :root {
@@ -38,7 +39,7 @@ body {
 /***************************************/
 
 main {
-  height: 85%;
+  height: 100%;
 }
 
 .row {
