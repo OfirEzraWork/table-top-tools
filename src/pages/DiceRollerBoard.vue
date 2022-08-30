@@ -327,7 +327,7 @@ export default {
   grid-template-columns: 1fr 2fr 1fr;
   grid-template-rows: 2fr 1fr;
   gap: 2.4rem;
-  height: 100%;
+
   grid-template-areas:
     "replaceable-one results replaceable-two"
     "replaceable-one summary replaceable-two";

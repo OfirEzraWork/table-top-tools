@@ -12,7 +12,8 @@ export default {};
 .board {
   padding: 2.4rem 0;
   margin: 0 auto;
-  width: 90%;
+  width: 130rem;
+  height: 80rem;
   display: grid;
 }
 </style>
